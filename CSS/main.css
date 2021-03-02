@@ -1,0 +1,445 @@
+@import url("https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;0,800;1,600&display=swap");
+*::before,
+*::after,
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+}
+.body {
+  transition: none !important;
+}
+img {
+  max-width: 100%;
+}
+
+/* Header & Navigation */
+
+header,
+.navbar,
+.mobile-navbar,
+.hero,
+.discover,
+.tasteful,
+.food-menu,
+.about,
+.reservation {
+  display: flex;
+  align-items: center;
+}
+.wraper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+header {
+  padding: 0.5rem;
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  justify-content: space-between;
+  transition: all 0.5s ease;
+  z-index: 99;
+}
+
+.scroll {
+  background-color: white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
+}
+
+.nav {
+  display: none;
+}
+.navbar-item,
+.mobile-navbar-item {
+  list-style-type: none;
+}
+.navbar-item {
+  margin-left: 1.5rem;
+}
+.last {
+  border: 1px solid #c79346;
+  border-radius: 3px;
+  padding: 0.5rem 1rem;
+}
+.navbar-link,
+.mobile-navbar-link {
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.mobile-navbar-link {
+  color: black;
+  font-size: 1.025rem;
+}
+
+.logo {
+  letter-spacing: 2px;
+  margin-left: 1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  color: #dcdcdc;
+}
+.navbar-toggler {
+  margin-right: 1rem;
+  font-size: 1.3rem;
+  color: #dcdcdc;
+}
+
+/* mobile nav */
+.mobile-nav-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+  transform: translateX(-100%);
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+  z-index: 1000;
+}
+.active {
+  opacity: 1;
+  transform: translateX(0%);
+  overflow: hidden;
+}
+.nav-header {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar-close {
+  margin-right: 1rem;
+  font-size: 1.5rem;
+}
+.nav-logo {
+  color: #2a2a2a;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.5;
+  font-weight: 600;
+}
+.mobile-navbar {
+  flex-direction: column;
+  justify-content: center;
+}
+.mobile-navbar-item {
+  margin-top: 2.5rem;
+}
+.mobile-navbar-link {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: #2a2a2a;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/IMG/hero-background.jpg);
+  background-size: cover;
+  background-position: center top;
+
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.hero-text span {
+  font-family: "Pinyon Script", cursive;
+  color: #c79346;
+  font-size: 3rem;
+}
+.hero-text h1 {
+  margin-top: 1rem;
+  font-size: 3rem;
+  color: white;
+  letter-spacing: 4px;
+  font-weight: 800;
+}
+
+.hero-text p {
+  color: #bbbbbb;
+  letter-spacing: 3px;
+  font-weight: 300;
+}
+/* Discover section */
+
+.discover,
+.tasteful {
+  margin: 2rem 1rem;
+  flex-direction: column;
+}
+
+.discover-img {
+  width: 300px;
+}
+
+.img-container {
+  border: 2px solid #c79346;
+  display: inline-block;
+  border-radius: 3px;
+  margin-left: -1rem;
+  margin-bottom: 1rem;
+}
+.tasteful-img-container {
+  border: 2px solid #c79346;
+  display: inline-block;
+  border-radius: 3px;
+  margin-right: -1rem;
+  margin-bottom: 1rem;
+}
+
+.img-container img {
+  position: relative;
+  top: 15px;
+  left: 15px;
+  border-radius: 3px;
+}
+.tasteful-img-container img {
+  position: relative;
+  top: 15px;
+  right: 15px;
+  border-radius: 3px;
+}
+.discover-text,
+.tasteful-text {
+  margin-top: 2rem;
+  max-width: 350px;
+  margin-left: 1.5rem;
+}
+.tasteful-text {
+  margin-left: 1rem;
+}
+.discover-text span,
+.tasteful-text span,
+.menu span,
+.about-text span,
+.reservation-text span {
+  color: #c79346;
+  font-family: "Pinyon Script", cursive;
+  font-size: 2.5rem;
+  position: relative;
+}
+.discover-text span::before,
+.tasteful-text span::before,
+.menu span::before,
+.about-text span::before,
+.reservation-text span::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 5px;
+  background-color: #c79346;
+  height: 2.5px;
+  width: 25px;
+}
+
+.discover-text h1,
+.tasteful-text h1,
+.menu h1 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: #2a2a2a;
+}
+.discover-text p,
+.tasteful-text p,
+.menu p {
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  color: #a9a9a9;
+}
+
+.discover-link,
+.tasteful-link,
+.about-link {
+  color: #c79346;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+/* menu */
+.menu {
+  text-align: center;
+  padding-top: 5rem;
+  max-width: 500px;
+  margin: 0rem auto;
+}
+
+.menu span {
+  position: relative;
+}
+.menu h1 {
+  margin-bottom: 1rem;
+}
+.menu span::before {
+  left: 40px;
+}
+.menu p {
+  margin: 1rem;
+}
+
+/* food menu */
+.food-menu {
+  padding-top: 3rem;
+  flex-direction: column;
+  justify-content: center;
+}
+.food-img-container img {
+  border-radius: 3px;
+  width: 300px;
+}
+.food-text {
+  max-width: 300px;
+  margin: 1.5rem 0rem;
+}
+.food-text h4 {
+  font-size: 1.5rem;
+  color: #2a2a2a;
+}
+.food-text p {
+  color: #a9a9a9;
+  line-height: 1.5;
+  margin-bottom: 0.5rem;
+}
+.food-text span {
+  color: #c79346;
+  font-size: 2rem;
+  font-family: "Pinyon Script", cursive;
+}
+
+/* about  section*/
+
+.about {
+  padding-top: 5rem;
+  flex-direction: column;
+}
+
+.about-text {
+  max-width: 300px;
+}
+
+.about-img-container img {
+  width: 300px;
+}
+
+.about-text h1 {
+  color: #2a2a2a;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.about-text p {
+  color: #a9a9a9;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+}
+
+/* reservation */
+.reservation {
+  padding: 5rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(/IMG/reservation.jpg);
+  background-size: cover;
+  background-position: center;
+
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -0.3rem;
+}
+.reservation-text span::before {
+  left: 65px;
+}
+.reservation-text {
+  text-align: center;
+}
+.reservation-text h2 {
+  font-size: 2rem;
+  color: white;
+  text-transform: uppercase;
+}
+.reservation-text p {
+  color: #a9a9a9;
+  line-height: 1.5;
+}
+
+input {
+  margin-top: 1rem;
+  background-color: transparent;
+  border: 1px solid #a9a9a9;
+  padding: 0.5rem;
+  width: 250px;
+  color: white;
+}
+input::placeholder {
+  color: white;
+}
+
+.reservation-button-container {
+  width: 250px;
+  margin-top: 2rem;
+  text-align: center;
+  background-color: #c79346;
+  padding: 0.5rem;
+}
+.reservation-button {
+  color: white;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+/* footer */
+footer {
+  background-color: #383838;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.fiasco h3,
+.contact h3,
+.open h3 {
+  text-transform: uppercase;
+  color: #c79346;
+}
+.fiasco,
+.contact,
+.open {
+  margin-top: 1rem;
+}
+.fiasco p,
+.contact p,
+.open p {
+  color: #a9a9a9;
+  line-height: 1.5;
+}
+.copyright {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.copyright h5 {
+  color: #dcdcdc;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+.copyright p {
+  margin-top: 0.3rem;
+  color: #bbbbbb;
+}

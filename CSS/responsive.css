@@ -1,0 +1,275 @@
+@media (min-width: 576px) {
+}
+
+@media (min-width: 768px) {
+  /* Discover section */
+  .discover-img {
+    width: 300px;
+  }
+  .discover,
+  .tasteful {
+    padding: 5rem 0rem;
+    max-width: 700px;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .menu {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+  .img-container {
+    margin-left: 0rem;
+    margin-bottom: 0rem;
+  }
+  .tasteful-img-container {
+    margin-right: 0rem;
+    order: 2;
+    margin-bottom: 0rem;
+  }
+  .discover-text,
+  .tasteful-text {
+    margin-left: 0rem;
+    max-width: 350px;
+  }
+  .tasteful-text {
+    order: 1;
+  }
+  .img-container img {
+    top: 20px;
+    left: 20px;
+  }
+  .tasteful-img-container img {
+    top: 20px;
+    right: 20px;
+  }
+  /* food menu */
+  .order2 {
+    order: 2;
+  }
+  .order1 {
+    order: 1;
+    text-align: right;
+  }
+  .food-menu {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 650px;
+    margin: 0 auto;
+  }
+  .food-text h4 {
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+  }
+  .food-text p {
+    font-size: 1.1rem;
+  }
+  /* about section */
+  .about {
+    flex-direction: row;
+    max-width: 650px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  .about-img-container img {
+    width: 250px;
+  }
+  .about-text {
+    max-width: 350px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* navigation */
+  header {
+    padding: 2rem;
+    background-color: transparent;
+  }
+  .logo {
+    margin-left: 0rem;
+  }
+  .logo,
+  .navbar-link {
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #dcdcdc;
+    font-weight: 400;
+  }
+  .nav {
+    display: block;
+  }
+  .navbar-toggler {
+    display: none;
+  }
+
+  /* discover & tasteful section */
+  .discover-img {
+    max-width: 100%;
+  }
+  .discover,
+  .tasteful {
+    max-width: 900px;
+  }
+  .discover-text,
+  .tasteful-text {
+    max-width: 500px;
+  }
+  .menu {
+    max-width: 900px;
+  }
+  .discover-text span,
+  .tasteful-text span,
+  .menu span {
+    font-size: 2rem;
+  }
+  .discover-text h1,
+  .tasteful-text h1,
+  .menu h1 {
+    font-size: 2rem;
+  }
+  .discover-text p,
+  .tasteful-text p,
+  .menu p {
+    font-size: 1.1rem;
+  }
+  .discover-link,
+  .tasteful-link {
+    font-size: 1.1rem;
+  }
+  /* food menu */
+  .food-menu {
+    max-width: 650px;
+  }
+  .food-img-container img {
+    width: 300px;
+  }
+  .food-text {
+    max-width: 300px;
+  }
+  .food-menu h4 {
+    font-size: 2rem;
+  }
+  .food-menu p {
+    font-size: 1.1rem;
+  }
+  .food-text span {
+    font-size: 2rem;
+  }
+  /* about section */
+  .about {
+    max-width: 950px;
+  }
+  .about-img-container img {
+    width: 100%;
+    max-width: 100%;
+  }
+  .about-text {
+    max-width: 600px;
+  }
+  /* reservation section */
+  .form {
+    display: flex;
+  }
+  input,
+  .reservation-button-container,
+  .reservation-text {
+    margin-right: 2rem;
+  }
+  /* footer */
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 950px;
+    margin: 0 auto;
+  }
+  .copyright {
+    max-width: 950px;
+    margin: 0 auto;
+  }
+  .fiasco p,
+  .contact p,
+  .open p {
+    max-width: 300px;
+  }
+}
+@media (min-width: 1200px) {
+  /* navigation */
+
+  /* hero */
+  .hero-text span {
+    font-size: 4rem;
+  }
+  .hero-text h1 {
+    font-size: 5rem;
+    letter-spacing: 10px;
+    font-weight: 800;
+  }
+  .hero-text p {
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+  }
+
+  /* discover & tasteful section */
+  .discover-img {
+    width: 400px;
+  }
+  .discover,
+  .tasteful {
+    max-width: 1000px;
+  }
+  .discover-text,
+  .tasteful-text {
+    max-width: 500px;
+  }
+  .menu {
+    max-width: 1100px;
+  }
+  .discover-text span,
+  .tasteful-text span,
+  .menu span,
+  .about-text span {
+    font-size: 3rem;
+  }
+  .discover-text h1,
+  .tasteful-text h1,
+  .menu h1 .about-text h1 {
+    font-size: 3rem;
+  }
+  .discover-text p,
+  .tasteful-text p,
+  .menu p,
+  .about-text p {
+    font-size: 1.3rem;
+  }
+  .discover-link,
+  .tasteful-link {
+    font-size: 1.3rem;
+  }
+  /* food menu */
+  .food-menu {
+    max-width: 950px;
+  }
+  .food-img-container img {
+    width: 400px;
+  }
+  .food-text {
+    max-width: 500px;
+  }
+  .food-menu h4 {
+    font-size: 2.5rem;
+  }
+  .food-menu p {
+    font-size: 1.2rem;
+  }
+  .food-text span {
+    font-size: 3rem;
+  }
+  /* about section */
+  .about {
+    max-width: 1000px;
+  }
+  .about-img-container img {
+    width: 100%;
+  }
+}
