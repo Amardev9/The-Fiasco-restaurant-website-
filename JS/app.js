@@ -31,10 +31,10 @@ document.addEventListener('DOMContentLoaded',() => {
         window.addEventListener('scroll',()=>{
         if(window.scrollY >= 200){
             navigation.classList.add('scroll');
-            menuToggler.style.color ="Black";
-            logo.style.color = "Black";
+            menuToggler.style.color ="#2a2a2a";
+            logo.style.color = "#2a2a2a";
             navbarLink.forEach(element => {
-                element.style.color ="Black";
+                element.style.color ="#2a2a2a";
             });            
             
 
@@ -48,5 +48,22 @@ document.addEventListener('DOMContentLoaded',() => {
             menuToggler.style.color = "#dcdcdc";  
         } 
     })
+
+    // slider
+    const swiper = new Swiper('.swiper-container', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  autoplay: {
+    delay: 3000,
+  },
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+});
     
 })

@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <!-- Swiper CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.15/swiper-bundle.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.15/swiper-bundle.min.css"/>
     <!-- Font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
     <!-- CSS -->
@@ -72,7 +74,7 @@
            <span>Discover</span>
            <h1>our gastronomy</h1>
            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut explicabo tempora eius asperiores vel culpa reiciendis repudiandae veritatis quasi laboriosam.</p>
-           <a href="#" class="discover-link"><i>See more</i><i class="fas fa-angle-right"></i></a>
+           <a href="#" class="discover-link">See more</i></a>
        </div>
     </section>
     <!-- Tasteful section -->
@@ -85,7 +87,7 @@
             <h1>Made with love</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut explicabo tempora eius asperiores vel culpa
                 reiciendis repudiandae veritatis quasi laboriosam.</p>
-            <a href="#" class="tasteful-link"><i>See more</i><i class="fas fa-angle-right"></i></a>
+            <a href="#" class="tasteful-link">See more</a>
         </div>
     </section>
     <!-- Menu -->
@@ -126,7 +128,7 @@
         <span>Chef</span>
         <h1>Meet our chef</h1>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia rem corporis exercitationem consequuntur officiis at, suscipit asperiores error unde tenetur magni ipsa accusantium veritatis officia reiciendis delectus ab, quas autem mollitia ipsam! Nemo nisi nihil est magni placeat quibusdam itaque.</p>
-        <a href="" class="about-link"><i>See more</i><i class="fas fa-angle-right"></i></a>
+        <a href="" class="about-link">See more</a>
     </div>
     <div class="about-img-container">
         <img src="/IMG/chef.png" alt="">
@@ -154,6 +156,61 @@
         <a class="reservation-button" href="#">Reserve table<a>
     </div>
 </section>
+<!-- Testemonials section -->
+<section class="testimonials" >
+    <span class="span">Testimonials</span>
+    <h1>What clients says</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ipsum expedita cum quas odio reprehenderit!</p>
+    <!-- Slider main container -->
+    <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <div class="user-one">
+                    <div class="user-one-img-container">
+                        <img src="/IMG/person-1.jpg" alt="">
+                    </div>
+                    <div class="user-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolorem aliquid corporis nostrum similique culpa id amet debitis omnis aliquam?</p>
+                        <h5>John Doe</h5>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="user-one">
+                    <div class="user-one-img-container">
+                        <img src="/IMG/person-2.jpg" alt="">
+                    </div>
+                    <div class="user-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolorem aliquid corporis nostrum similique
+                            culpa id amet debitis omnis aliquam?</p>
+                        <h5>John Doe</h5>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="user-one">
+                    <div class="user-one-img-container">
+                        <img src="/IMG/person-3.jpg" alt="">
+                    </div>
+                    <div class="user-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolorem aliquid corporis nostrum similique
+                            culpa id amet debitis omnis aliquam?</p>
+                        <h5>John Doe</h5>
+                    </div>
+                
+                </div>
+            </div>
+            
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+    
+    </div>
+</section>
 <!-- footer  -->
 <footer>
     <div class="footer-container" id="3">
@@ -179,9 +236,10 @@
     </div>
 </footer>
     
-
-
-    <!-- Javascript -->
-    <script src="/JS/app.js" ></script>
+<!-- Swiper CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.15/swiper-bundle.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.15/swiper-bundle.min.js"></script>
+<!-- Javascript -->
+<script src="/JS/app.js" ></script>
 </body>
 </html>

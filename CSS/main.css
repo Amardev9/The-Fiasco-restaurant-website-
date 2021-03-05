@@ -228,7 +228,8 @@ header {
 .tasteful-text span,
 .menu span,
 .about-text span,
-.reservation-text span {
+.reservation-text span,
+.testimonials .span {
   color: #c79346;
   font-family: "Pinyon Script", cursive;
   font-size: 2.5rem;
@@ -238,7 +239,8 @@ header {
 .tasteful-text span::before,
 .menu span::before,
 .about-text span::before,
-.reservation-text span::before {
+.reservation-text span::before,
+.testimonials .span::before {
   content: "";
   position: absolute;
   top: -15px;
@@ -403,9 +405,69 @@ input::placeholder {
   letter-spacing: 2px;
   text-decoration: none;
 }
+/* testimonials */
+.testimonials {
+  text-align: center;
+  margin: 5rem 1rem 5rem 1rem;
+}
+.testimonials .span::before {
+  left: 75px;
+}
+.testimonials h1 {
+  color: #2a2a2a;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+}
+.testimonials p {
+  color: #a9a9a9;
+  line-height: 1.5;
+}
+.swiper-container {
+  width: 300px;
+  height: 300px;
+  margin-top: 2rem;
+  border: 1px solid #c79346;
+  border-radius: 3px;
+}
+
+.user-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.user-text {
+  margin-top: 1rem;
+}
+.user-text h5 {
+  margin-top: 1rem;
+  letter-spacing: 1px;
+  font-weight: 900;
+  color: #383838;
+}
+.user-one-img-container {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+.user-one-img-container img {
+  border-radius: 50%;
+}
+.swiper-pagination > .swiper-pagination-bullet {
+  opacity: 0.5;
+  background-color: #c79346;
+  border: 5px solid #c79346;
+}
+.swiper-pagination > .swiper-pagination-bullet-active {
+  opacity: 1;
+  background-color: #c79346;
+  border: 5px solid #c79346;
+}
 /* footer */
 footer {
   background-color: #383838;
+  padding: 2rem;
 }
 .footer-container {
   display: flex;

@@ -61,9 +61,11 @@
     font-size: 1.8rem;
     letter-spacing: 2px;
   }
-  .food-text p {
+  .food-text p,
+  .testimonials p {
     font-size: 1.1rem;
   }
+
   /* about section */
   .about {
     flex-direction: row;
@@ -77,6 +79,23 @@
   .about-text {
     max-width: 350px;
   }
+  /* testimonials */
+  .testimonials {
+    max-width: 650px;
+    margin: 3rem auto;
+  }
+  .swiper-container {
+    width: 400px;
+    height: 400px;
+  }
+  .user-one-img-container {
+    width: 80px;
+    height: 80px;
+  }
+  .user-text h5 {
+    margin-top: 2rem;
+  }
+  /* footer */
 }
 
 @media (min-width: 992px) {
@@ -120,17 +139,20 @@
   }
   .discover-text span,
   .tasteful-text span,
-  .menu span {
+  .menu span,
+  .testimonials .span {
     font-size: 2rem;
   }
   .discover-text h1,
   .tasteful-text h1,
-  .menu h1 {
+  .menu h1,
+  .testimonials h1 {
     font-size: 2rem;
   }
   .discover-text p,
   .tasteful-text p,
-  .menu p {
+  .menu p,
+  .testimonials p {
     font-size: 1.1rem;
   }
   .discover-link,
@@ -166,6 +188,10 @@
   }
   .about-text {
     max-width: 600px;
+  }
+  /* testimonials */
+  .testimonials .span::before {
+    left: 60px;
   }
   /* reservation section */
   .form {
@@ -228,22 +254,27 @@
   .discover-text span,
   .tasteful-text span,
   .menu span,
-  .about-text span {
+  .about-text span,
+  .testimonials .span {
     font-size: 3rem;
   }
   .discover-text h1,
   .tasteful-text h1,
-  .menu h1 .about-text h1 {
-    font-size: 3rem;
+  .menu h1,
+  .about-text h1,
+  .testimonials h1 {
+    font-size: 2.5rem;
   }
   .discover-text p,
   .tasteful-text p,
   .menu p,
-  .about-text p {
+  .about-text p,
+  .testimonials p {
     font-size: 1.3rem;
   }
   .discover-link,
-  .tasteful-link {
+  .tasteful-link,
+  .about-link {
     font-size: 1.3rem;
   }
   /* food menu */
@@ -271,5 +302,16 @@
   }
   .about-img-container img {
     width: 100%;
+  }
+  /* testimonials */
+  .swiper-container {
+    width: 500px;
+    height: 450px;
+  }
+  .user-text h5 {
+    font-size: 1.3rem;
+  }
+  .testimonials .span::before {
+    left: 100px;
   }
 }
