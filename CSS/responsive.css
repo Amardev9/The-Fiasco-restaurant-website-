@@ -237,6 +237,26 @@
   }
 
   /* discover & tasteful section */
+  .background-img-container {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.95),
+        rgba(255, 255, 255, 0.95)
+      ),
+      url(/IMG/brokula-background.png);
+
+    background-repeat: no-repeat;
+    background-position: right -180px bottom;
+  }
+  .background-img-container-2 {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.95),
+        rgba(255, 255, 255, 0.95)
+      ),
+      url(/IMG/krompir-background.png);
+
+    background-repeat: no-repeat;
+    background-position: left -250px bottom;
+  }
   .discover-img {
     width: 400px;
   }

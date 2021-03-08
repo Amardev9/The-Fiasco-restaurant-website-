@@ -126,6 +126,9 @@ header {
   margin-right: 1rem;
   font-size: 1.5rem;
 }
+.navbar-close i {
+  color: #2a2a2a;
+}
 .nav-logo {
   color: #2a2a2a;
   text-transform: uppercase;
@@ -177,7 +180,6 @@ header {
   font-weight: 300;
 }
 /* Discover section */
-
 .discover,
 .tasteful {
   margin: 2rem 1rem;
@@ -262,7 +264,7 @@ header {
 .menu p {
   line-height: 1.8;
   margin-bottom: 1rem;
-  color: #a9a9a9;
+  color: #888888;
 }
 
 .discover-link,
@@ -314,7 +316,7 @@ header {
   color: #2a2a2a;
 }
 .food-text p {
-  color: #a9a9a9;
+  color: #888888;
   line-height: 1.5;
   margin-bottom: 0.5rem;
 }
@@ -345,7 +347,7 @@ header {
   text-transform: uppercase;
 }
 .about-text p {
-  color: #a9a9a9;
+  color: #888888;
   line-height: 1.5;
   margin-bottom: 1.5rem;
 }
@@ -374,14 +376,14 @@ header {
   text-transform: uppercase;
 }
 .reservation-text p {
-  color: #a9a9a9;
+  color: #888888;
   line-height: 1.5;
 }
 
 input {
   margin-top: 1rem;
   background-color: transparent;
-  border: 1px solid #a9a9a9;
+  border: 1px solid #888888;
   padding: 0.5rem;
   width: 250px;
   color: white;
@@ -419,7 +421,7 @@ input::placeholder {
   text-transform: uppercase;
 }
 .testimonials p {
-  color: #a9a9a9;
+  color: #888888;
   line-height: 1.5;
 }
 .swiper-container {
@@ -466,7 +468,7 @@ input::placeholder {
 }
 /* footer */
 footer {
-  background-color: #383838;
+  background-color: rgb(42, 42, 42);
   padding: 2rem;
 }
 .footer-container {
@@ -488,7 +490,7 @@ footer {
 .fiasco p,
 .contact p,
 .open p {
-  color: #a9a9a9;
+  color: #888888;
   line-height: 1.5;
 }
 .copyright {
@@ -497,7 +499,7 @@ footer {
   padding: 1rem;
 }
 .copyright h5 {
-  color: #dcdcdc;
+  color: #bbbbbb;
   font-weight: 800;
   letter-spacing: 2px;
 }
